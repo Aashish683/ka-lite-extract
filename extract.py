@@ -15,5 +15,5 @@ objects = db.fetchall()
 
 db.execute('SELECT * FROM topic_tools_assessmentitem;')
 
-with open('assesmentData.json', 'w') as outfile:
+with open('assessmentData.json', 'w') as outfile:
     json.dump(db.fetchall(), outfile,indent=2)
